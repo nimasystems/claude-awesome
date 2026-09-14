@@ -1,0 +1,27 @@
+# Strict baseline, run as `flutter analyze --fatal-infos` locally and in CI.
+include: package:very_good_analysis/analysis_options.yaml
+
+analyzer:
+  exclude:
+    - "build/**"
+    - "**/*.g.dart"
+    - "**/*.freezed.dart"
+    - "**/*.config.dart"
+    - "**/*.gr.dart"
+    - "**/*.mocks.dart"
+    - "lib/core/network/api/**"          # swagger_parser output
+    - "lib/l10n/gen/**"                  # gen-l10n output
+    - "lib/design_system/theme/app_tokens.dart"
+  errors:
+    todo: ignore
+
+linter:
+  rules:
+    # Public API docs are required by convention, not by lint.
+    public_member_api_docs: false
+    # dart format enforces width on code; don't fail on long docs/strings.
+    lines_longer_than_80_chars: false
+    # Single-method interfaces are deliberate DI / mock-vs-api seams.
+    one_member_abstracts: false
+    # Repository guard() catches everything and maps to a typed Failure.
+    avoid_catches_without_on_clauses: false

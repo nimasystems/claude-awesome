@@ -1,0 +1,20 @@
+[
+  {
+    "id": "v1",
+    "name": "Blue Note",
+    "imageUrl": "https://picsum.photos/seed/v1/200",
+    "addedAt": "2026-09-01T18:30:00Z"
+  },
+  {
+    "id": "v2",
+    "name": "Jazz Cellar",
+    "imageUrl": "https://picsum.photos/seed/v2/200",
+    "addedAt": "2026-08-20T09:00:00+02:00"
+  },
+  {
+    "id": "v3",
+    "name": "Rooftop 21",
+    "imageUrl": "https://picsum.photos/seed/v3/200",
+    "addedAt": "2026-07-04T12:00:00Z"
+  }
+]

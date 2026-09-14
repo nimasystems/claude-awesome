@@ -1,0 +1,13 @@
+{
+  "@@locale": "en",
+  "errorGeneric": "Something went wrong. Please try again.",
+  "@errorGeneric": { "description": "Fallback message for unexpected failures." },
+  "errorNoConnection": "No internet connection.",
+  "@errorNoConnection": { "description": "Shown for NetworkFailure." },
+  "errorSessionExpired": "Your session has expired. Please sign in again.",
+  "@errorSessionExpired": { "description": "Shown for AuthFailure." },
+  "errorNotFound": "We couldn't find that.",
+  "@errorNotFound": { "description": "Shown for NotFoundFailure." },
+  "retry": "Retry",
+  "@retry": { "description": "Retry button label." }
+}

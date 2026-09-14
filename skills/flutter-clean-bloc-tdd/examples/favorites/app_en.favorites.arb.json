@@ -1,0 +1,40 @@
+{
+  "favoritesTitle": "Favorites",
+  "@favoritesTitle": {
+    "description": "App bar title of the favorites screen."
+  },
+  "favoritesEmpty": "No favorites yet.",
+  "@favoritesEmpty": {
+    "description": "Shown when the user has no favorite venues."
+  },
+  "favoritesAddedOn": "Added {date}",
+  "@favoritesAddedOn": {
+    "description": "Subtitle of a favorite venue: when it was added.",
+    "placeholders": {
+      "date": {
+        "type": "DateTime",
+        "format": "yMMMd"
+      }
+    }
+  },
+  "favoritesRemoveTooltip": "Remove {venueName} from favorites",
+  "@favoritesRemoveTooltip": {
+    "description": "Tooltip and accessibility label of the remove-favorite button.",
+    "placeholders": {
+      "venueName": {
+        "type": "String",
+        "example": "Blue Note"
+      }
+    }
+  },
+  "favoritesRemoveFailed": "Couldn't remove favorite. {reason}",
+  "@favoritesRemoveFailed": {
+    "description": "Snackbar shown when removing a favorite failed and it was restored. reason is a localized error message.",
+    "placeholders": {
+      "reason": {
+        "type": "String",
+        "example": "No internet connection."
+      }
+    }
+  }
+}
